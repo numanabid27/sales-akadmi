@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fira sans font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- owl carousal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <!-- style sheet -->
@@ -16,34 +17,461 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <a class="navbar-brand" href="#">
+    <header class="header">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="index.html">
                 <img src="./assets/images/logo.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav m-auto nav-list">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">For Employment Agencies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="course-structure.html">Course Structure</a>
                     </li>
                 </ul>
             </div>
+            <a href="#" class="inquery-btn">
+                Non-Binding Inquiry
+            </a>
         </nav>
     </header>
+
+    <!-- bnanner -->
+    <section>
+        <div class="banner">
+            <div class="row banner_row">
+                <div class="col-md-6 text-col">
+                    <h6>LEARN NEW THINGS DAILY</h6>
+                    <h1>Start Better Learning Future From Here</h1>
+                    <p>Empower yourself with the knowledge and skills gained through
+                        online education and best instructors.
+                    </p>
+                    <a href="#">Here We Go <span><img src="./assets/images/right-arrow.png" alt="" /></span></a>
+                </div>
+                <div class="col-md-6 text-col2">
+                    <img src="./assets/images/banner-img.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- we offer -->
+    <section class="offer-sec">
+        <div class="offer-text text-center">
+            <p>WHAT WE OFFER</p>
+            <h2 class="pt-2">Leading you to your dream job</h2>
+        </div>
+
+        <div class="offer-row mt-5 position-relative">
+            <div class="offer-col">
+                <img src="./assets/images/pound.png" alt="" />
+                <h6>Full assumption of costs</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#">Learn More <span><img src="./assets/images/right-arrow.png" alt=""></span></a>
+            </div>
+            <div class="offer-col">
+                <img src="./assets/images/link.png" alt="" />
+                <h6>Full assumption of costs</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               <a href="#">Learn More <span><img src="./assets/images/right-arrow.png" alt=""></span></a>
+            </div>
+            <div class="offer-col">
+                <img src="./assets/images/link-one.png" alt="" />
+                <h6>Full assumption of costs</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               <a href="#">Learn More <span><img src="./assets/images/right-arrow.png" alt=""></span></a>
+            </div>
+            <div class="offer-col">
+                <img src="./assets/images/link-two.png" alt="" />
+                <h6>Full assumption of costs</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               <a href="#">Learn More <span><img src="./assets/images/right-arrow.png" alt=""></span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- course offer -->
+    <section class="course-offer_sec">
+        <div class="container-fluid">
+            <div class="offer-text text-center">
+                <p>WHAT WE OFFER?</p>
+                <h2 class="pt-2">Our Course Offer</h2>
+                <h6>With our course, you lay the foundation for a successful lateral entry into the world of app development.
+                    After completing the course, you are a certified IT specialist for app development and can even take the exam for the recognized qualification of “Mobile Developer (IHK)”.
+                </h6>
+            </div>
+            <div class="we-offer_row">
+                <div class="we-offer_col d-flex align-items-center">
+                    <div class="we-offer_col_img"> 
+                        <img src="./assets/images/clock.png" />
+                    </div>
+                    <div>
+                        <h6>Length of Time</h6>
+                        <p>12 Months</p>
+                    </div>
+                </div>
+                <div class="we-offer_col d-flex align-items-center">
+                    <div class="we-offer_col_img"> 
+                        <img src="./assets/images/pounds.png" />
+                    </div>
+                    <div>
+                        <h6>Costs</h6>
+                        <p>100% government funded</p>
+                    </div>
+                </div>
+                <div class="we-offer_col d-flex align-items-center">
+                    <div class="we-offer_col_img"> 
+                        <img src="./assets/images/routes.png" />
+                    </div>
+                    <div>
+                        <h6>Course Size</h6>
+                        <p>15 to 25 people</p>
+                    </div>
+                </div>
+                <div class="we-offer_col d-flex align-items-center">
+                    <div class="we-offer_col_img"> 
+                        <img src="./assets/images/ways.png" />
+                    </div>
+                    <div>
+                        <h6>Language</h6>
+                        <p>sufficient knowledge of German</p>
+                    </div>
+                </div>
+                <div class="we-offer_col d-flex align-items-center">
+                    <div class="we-offer_col_img"> 
+                        <img src="./assets/images/locations.png" />
+                    </div>
+                    <div>
+                        <h6>Location</h6>
+                        <p>virtual classroom</p>
+                    </div>
+                </div>
+                <div class="we-offer_col d-flex align-items-center">
+                    <div class="we-offer_col_img"> 
+                        <img src="./assets/images/frames.png" />
+                    </div>
+                    <div>
+                        <h6>Hardware</h6>
+                        <p>MacBook included</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="download">
+                <span>
+                    <img src="./assets/images/download.png" alt="" />
+                </span>
+                Download Info Flyer
+                
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- need to be bring -->
+    <section class="need-bring_Sec">
+        <div class="offer-text text-center">
+            <p>Do’s & Don'ts</p>
+            <h2 class="pt-2">What You Need To Bring?</h2>
+            <h6>We consciously try to keep the hurdles on the way to your career as an app developer as low as possible.</h6>
+        </div>
+        <div class="container-fluid">
+            <div class="bring_row">
+                <div class="bring_col">
+                    <h5>You Must:</h5>
+                    <ul class="bring_list">
+                        <li>
+                            <img src="./assets/images/tick.png" alt="" />
+                            Be registered as a job seeker
+                        </li>
+                        <li>
+                            <img src="./assets/images/tick.png" alt="" />
+                            Have B2 German level
+                        </li>
+                        <li>
+                            <img src="./assets/images/tick.png" alt="" />
+                            Invest 9 months
+                        </li>
+                        <li>
+                            <img src="./assets/images/tick.png" alt="" />
+                            Great willingness to learn and motivation
+                        </li>
+                    </ul>
+                </div>
+                <div class="bring_col">
+                    <h5>You Must Not:</h5>
+                    <ul class="bring_list">
+                        <li>
+                            <img src="./assets/images/cross.png" alt="" />
+                            Forego unemployment benefits
+                        </li>
+                        <li>
+                            <img src="./assets/images/cross.png" alt="" />
+                            Bring work experience in IT
+                        </li>
+                        <li>
+                            <img src="./assets/images/cross.png" alt="" />
+                            Have your own tech setup
+                        </li>
+                        <li>
+                            <img src="./assets/images/cross.png" alt="" />
+                            Deciding between course and children
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+
+    <!-- success important thing -->
+    <section class="success things">
+        <div class="success-bg">
+            <div class="container">
+                <h2 class="text-center">Your Success Is The Most Important Thing For Us</h2>
+
+                <div class="d-flex success_row">
+                    <div class="success-col text-center">
+                        <img src="./assets/images/flask.png" alt="">
+                        <h6>100%</h6>
+                        <p>Average Salary</p>
+                    </div>
+                    <div class="success-col text-center">
+                        <img src="./assets/images/question.png" alt="">
+                        <h6>64,000</h6>
+                        <p>Vacancies</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- smart phone -->
+    <section class="smart_sec">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 smart-outer_row">
+                    <h2>Smartphones and tablets are taking over the internet</h2>
+                    <p>Whether music, shopping, finance or travel - apps have arrived in the everyday life of the population and are economic growth drivers.</p>
+                    <p>With this sharp increase in the use of apps, the demands on the professional development of such apps are increasing. We think that programming is the new “craft” and know that app development is not learned through studying, but rather through continuous experimentation and the use of the relevant programming languages. Therefore, the area of ​​app development is ideal for lateral entry.</p>
+                    <a href="#">
+                        Non-Binding Inquiry
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <div class="smart-inner_row">
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                        <div class="smart-col">
+                            <img src="./assets/images/smart.png" alt="" />
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- technology -->
+    <section class="technology-sec">
+        <div class="offer-text text-center">
+            <p>TECHNOLOGY</p>
+            <h2 class="pt-2">What can I do as a graduate reach the App Academy?</h2>
+        </div>
+        <div class="owl-carousel owl-theme blogs">
+            <div class="item">
+                <div class="item_inner">
+                    <img src="./assets/images/bog.png" alt="" />
+                    <div class="inner-item__text">
+                        <h6>quality control</h6>
+                        <p>Through the practical standards that you learn in the App Academy, you can enter the field of quality control for software.</p>
+                        <p>There are currently over 4,000 vacancies in this area in Germany, with annual salaries between €40,000 and €55,000.</p>
+                    </div>
+                </div>
+            </div>  
+            <div class="item">
+                <div class="item_inner">
+                    <img src="./assets/images/bog.png" alt="" />
+                    <div class="inner-item__text">
+                        <h6>quality control</h6>
+                        <p>Through the practical standards that you learn in the App Academy, you can enter the field of quality control for software.</p>
+                        <p>There are currently over 4,000 vacancies in this area in Germany, with annual salaries between €40,000 and €55,000.</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="item">
+                <div class="item_inner">
+                    <img src="./assets/images/bog.png" alt="" />
+                    <div class="inner-item__text">
+                        <h6>quality control</h6>
+                        <p>Through the practical standards that you learn in the App Academy, you can enter the field of quality control for software.</p>
+                        <p>There are currently over 4,000 vacancies in this area in Germany, with annual salaries between €40,000 and €55,000.</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="item">
+                <div class="item_inner">
+                    <img src="./assets/images/bog.png" alt="" />
+                    <div class="inner-item__text">
+                        <h6>quality control</h6>
+                        <p>Through the practical standards that you learn in the App Academy, you can enter the field of quality control for software.</p>
+                        <p>There are currently over 4,000 vacancies in this area in Germany, with annual salaries between €40,000 and €55,000.</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="item">
+                <div class="item_inner">
+                    <img src="./assets/images/bog.png" alt="" />
+                    <div class="inner-item__text">
+                        <h6>quality control</h6>
+                        <p>Through the practical standards that you learn in the App Academy, you can enter the field of quality control for software.</p>
+                        <p>There are currently over 4,000 vacancies in this area in Germany, with annual salaries between €40,000 and €55,000.</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="item">
+                <div class="item_inner">
+                    <img src="./assets/images/bog.png" alt="" />
+                    <div class="inner-item__text">
+                        <h6>quality control</h6>
+                        <p>Through the practical standards that you learn in the App Academy, you can enter the field of quality control for software.</p>
+                        <p>There are currently over 4,000 vacancies in this area in Germany, with annual salaries between €40,000 and €55,000.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- sales akadmie -->
+    <section>
+        <div class="sales-akadmie">
+            <div class="container">
+                <h2 class="text-center">Are You Ready To Go On your Way With The Sales Akadmie?</h2>
+                <a href="#">
+                    Non-Binding Inquiry
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact info -->
+    <section class="contact-sec">
+        <div class="container">
+            <div class="contact-row">
+                <div class="contact-img">
+                    <img src="./assets/images/contact.png" alt="" />
+                </div>
+                <div class="contact_text">
+                    <h6>Contact our educational advisors</h6>
+                    <h5>Tim Jenner</h5>
+                    <div>
+                        <a href="tel:030 75438658">030 75438658</a> // 
+                        <a href="tel:015792520640">015792520640</a>
+                    </div>
+                    <a href="mailto:tim.jenner@app-akademie.com">tim.jenner@app-akademie.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-bg">
+        <div class="container-fluid">
+            <div class="row footer_row ">
+                <div class="col-md-6 p-0">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="./assets/images/footer-logo.png" alt="" />
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="#">AGB</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Impressum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 footer_social p-0">
+                    <a href="#">
+                        <img src="./assets/images/fb.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/twitter.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/linkdin.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/insta.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="text-center text-white pt-3 pb-3">©Copyright 2023 app akademie. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
 
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- script file -->
     <script src="main.js"></script>
 </body>
