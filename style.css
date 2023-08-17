@@ -582,9 +582,37 @@ ul.course-content_list li a{
     background-color: #2c666e0d;
     padding: 70px 0;
 }
-
-
-
+.faq-sec .accordion-button{
+    background-color: #2c666e0d;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-dark);
+    padding: 23px 0;
+}
+.faq-sec .accordion-body{
+    background-color: #2c666e0d;
+    font-size: 18px;
+    font-weight:300;
+    color: var(--color-dark);
+}
+.faq-sec .accordion-item{
+    border-bottom: 1px solid 
+    #DCDCDC !important;
+    border: none;
+}
+.faq-sec .accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.faq-sec .accordion-button:focus{
+    border-color: unset;
+    box-shadow:unset;
+}
+.accordion-button::after{
+    background-image: url('./assets/images/plus.png');
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('./assets/images/minus.png');
+}
 /* ========== impersum page =============  */
 
 .banner-course.banner-impersum{
@@ -701,3 +729,13 @@ a.obj-btn {
 }
 
 /* steps */
+.steps-col{
+    display: flex;
+}
+.steps-col_img{
+    display: flex;
+    position: absolute;
+}
+.steps-col:nth-child(even){
+    flex-direction: column-reverse;
+}
