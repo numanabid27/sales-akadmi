@@ -17,36 +17,33 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/images/logo.png" alt="" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav m-auto nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">For Employment Agencies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="course-structure.html">Course Structure</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-md custom-container nav-navBar">
+            <div class="container-fluid">
+                <a class="navbar-brand home-logo" href="index.html">
+                    <img src="./assets/images/logo.png" alt="" />
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./assets/images/toggle.png" alt="" />
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto nav-list">
+                    <a class="nav-link " href="index.html">Home</a>
+                    <a class="nav-link" href="for-employment-agencies.html">For Employment Agencies</a>
+                    <a class="nav-link active" href="course-structure.html">Course Structure</a>
+                </div>
             </div>
             <a href="#" class="inquery-btn">
                 Non-Binding Inquiry
             </a>
-        </nav>
+            </div>
+          </nav>
+      
     </header>
 
     <!-- bnanner -->
     <section>
-        <div class="banner-course">
-            <div class="text-center course-banner">
+        <div class="banner-course ">
+            <div class="text-center course-banner custom-container">
                 <h6>The best online courses you'll find</h6>
                 <h1>Providing the best learning experience</h1>
                 <a href="#" class="download">
@@ -61,7 +58,7 @@
     </section>
 
     <!-- course sttructure -->
-    <section class="course-structure container">
+    <section class="course-structure custom-container">
         <div class="text-center course-heading">
             <h6 class="color-dark">YOUR WAY TO BECOMING A UI/UX DESIGNER...</h6>
             <h2 class="color-yellow pt-2">This Is How The Course Is Structured</h2>
@@ -171,7 +168,7 @@
         <div class="container">
             <div class="offer-text text-center">
                 <p>HELP AND SUPPORT</p>
-                <h2 class="pt-2">Frequently Asked Questions</h2>
+                <h2 class="pt-2 pb-4">Frequently Asked Questions</h2>
             </div>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -210,9 +207,71 @@
                     </div>
                   </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          When did Webflow was founded?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          When did Webflow was founded?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor
+                      </div>
+                    </div>
+                </div>
               </div>
         </div>
     </section>
+
+    <!-- footer -->
+    <footer class="footer-bg">
+        <div class="custom-container ">
+            <div class="container-fluid">
+                <div class="row footer_row ">
+                    <div class="col-md-6 p-0">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="./assets/images/footer-logo.png" alt="" />
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">AGB</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Impressum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 footer_social p-0">
+                        <a href="#">
+                            <img src="./assets/images/fb.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/twitter.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/linkdin.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/insta.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+            <p class="text-center text-white pt-3 pb-3">©Copyright 2023 app akademie. All Rights Reserved</p>
+        </div>
+    </footer>
 
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>

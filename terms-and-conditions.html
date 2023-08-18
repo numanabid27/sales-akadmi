@@ -15,37 +15,34 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/images/logo.png" alt="" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav m-auto nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">For Employment Agencies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="course-structure.html">Course Structure</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-md custom-container nav-navBar">
+            <div class="container-fluid">
+                <a class="navbar-brand home-logo" href="index.html">
+                    <img src="./assets/images/logo.png" alt="" />
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./assets/images/toggle.png" alt="" />
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto nav-list">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="for-employment-agencies.html">For Employment Agencies</a>
+                    <a class="nav-link" href="course-structure.html">Course Structure</a>
+                </div>
             </div>
             <a href="#" class="inquery-btn">
                 Non-Binding Inquiry
             </a>
-        </nav>
+            </div>
+          </nav>
+      
     </header>
 
     <!-- bnanner -->
     <section>
-        <div class="banner-course banner-impersum">
+        <div class="banner-course banner-impersum terms-banner">
             <div class="container">
-                <div class="text-center course-banner">
+                <div class="text-center course-banner banner-impersum_inner">
                     <h1>Terms & Conditions</h1>
                 </div>
             </div>
@@ -53,7 +50,7 @@
     </section>
     
     <section>
-        <div class="desription">
+        <div class="desription custom-container">
             <div class="desription__inner">
                 <h6>Requirements for Participation</h6>
                 <p>Anyone can take part in the course at the educational institution, provided that the admission requirements have been determined and confirmed by the educational institution in an informal assessment procedure. If funding (e.g. according to SGB III) is claimed, the special admission requirements of the respective funding institute must also be met</p>
@@ -141,35 +138,38 @@
    
      <!-- footer -->
      <footer class="footer-bg">
-        <div class="container-fluid">
-            <div class="row footer_row ">
-                <div class="col-md-6 p-0">
-                    <div class="footer-logo">
+        <div class="custom-container ">
+            <div class="container-fluid">
+                <div class="row footer_row ">
+                    <div class="col-md-6 p-0">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="./assets/images/footer-logo.png" alt="" />
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">AGB</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Impressum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 footer_social p-0">
                         <a href="#">
-                            <img src="./assets/images/footer-logo.png" alt="" />
+                            <img src="./assets/images/fb.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/twitter.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/linkdin.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/insta.png" alt="">
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#">AGB</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Impressum</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 footer_social p-0">
-                    <a href="#">
-                        <img src="./assets/images/fb.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/twitter.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/linkdin.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/insta.png" alt="">
-                    </a>
                 </div>
             </div>
+           
             <p class="text-center text-white pt-3 pb-3">©Copyright 2023 app akademie. All Rights Reserved</p>
         </div>
     </footer>

@@ -3,7 +3,7 @@ $('.owl-carousel.blogs').owlCarousel({
     margin:30,
     dots:false,
     nav:false,
-    stagePadding: 70,
+    stagePadding: 40,
     responsive:{
         0:{
             items:1,

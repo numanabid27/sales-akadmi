@@ -37,8 +37,16 @@ a:hover{
 .color-dark{
     color: var(--color-dark);
 }
+.custom-container{
+    margin: 0 auto;
+    max-width: 1315px;
+    padding: 0 20px;
+}
 
 /* header */
+a.active{
+    color: var(--color-yellow) !important;
+}
 .header{
     position: absolute;
     top: 0;
@@ -53,19 +61,22 @@ a:hover{
     font-weight: 600;
     border-radius: 5px;
 }
-.nav-list li a{
+.nav-list{
+    justify-content: space-between;
+    gap: 21px;
+}
+.nav-list  a{
     color: var(--color-dark);
     font-size: 18px;
     transition: 0.4s;
 }
-.nav-list li a:hover{
+.nav-list a:hover{
     color: var(--color-yellow);
 }
 
 .nav-navBar{
-    padding: 32px 20px;
-    margin: 0 auto;
-    max-width: 1320px;
+    padding-top: 35px;
+    padding-bottom: 32px;
 }
 /* banner */
 .banner{
@@ -74,6 +85,10 @@ a:hover{
     background-repeat: no-repeat;
     height: 138vh;
     position: relative;
+}
+.banner.home-banner{
+    background-image: url('./assets/images/home-banner.png');
+    background-position: center center;
 }
 .text-col h6{
     color: var(--color-yellow);
@@ -111,20 +126,17 @@ a:hover{
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 1329px;
     bottom: 0;
     top: 0;
     height: fit-content;
     align-items: center;
-    padding: 0px 20px;
 }
 
 
 /* what we offer */
 .offer-sec{
-    margin: 0 auto;
-    max-width: 1303px;
-    padding: 119px 10px;
+    padding-top: 119px ;
+    padding-bottom: 119px;
 }
 .offer-text p{
     color: var(--color-dark);
@@ -158,7 +170,7 @@ a:hover{
     padding: 24px 24px 36px;
 }
 .offer-col h6{
-    font-size: 20px;
+    font-size: 1.33vw;
     font-weight: 500;
     color: var(--color-dark);
     padding: 26px 0 12px;
@@ -247,12 +259,11 @@ a:hover{
 
 /* need to be brings */
 .need-bring_Sec{
-    padding: 122px 0;
-    margin: 0 auto;
-    max-width: 1326px;
+    padding-top: 122px;
+    padding-bottom: 122px;
 }
 .bring_row{
-    padding: 63px 10px 0;
+    padding: 63px 0px 0;
     gap: 20px;
     display: grid;
     grid-template-columns: auto auto;
@@ -315,9 +326,7 @@ a:hover{
 
 /* smart phone */
 .smart_sec{
-    padding: 105px 0;
-    margin: 0 auto;
-    max-width: 1277px;
+    padding: 105px 31px;
 }
 .smart-inner_row{
     gap: 9px;
@@ -467,9 +476,8 @@ a:hover{
     max-width: 153px;
 }
 .footer_row{
-    padding: 44px 0px;
-    margin: 0 auto;
-    max-width: 1268px;
+    padding-top: 44px ;
+    padding-bottom: 44px;
     border-bottom: 1px solid #fff;
 }
 .footer_social{
@@ -499,6 +507,10 @@ a:hover{
     height: 539px;
     position: relative;
 }
+.banner-course.employe-bg{
+    background-image: url('./assets/images/employ-bg.png');
+    background-position: center center;
+}
 .banner-course h6{
     color: var(--color-yellow);
     font-size: 24px;
@@ -517,6 +529,12 @@ a:hover{
     top: 0;
     margin: auto;
     height: fit-content;
+}
+.course-banner.banner-impersum_inner{
+    height: 0;
+}
+.course-banner.banner-impersum_inner h1{
+    padding: 0px 0 42px;
 }
 .course-structure{
     padding: 70px 0;
@@ -609,9 +627,17 @@ ul.course-content_list li a{
 }
 .accordion-button::after{
     background-image: url('./assets/images/plus.png');
+    transition: unset;
+    width: 14px;
+    height: 14px;
+    background-size: contain;
 }
 .accordion-button:not(.collapsed)::after{
     background-image: url('./assets/images/minus.png');
+    transition: unset;
+    width: 14px;
+    height: 14px;
+    background-size: contain;
 }
 /* ========== impersum page =============  */
 
@@ -635,7 +661,8 @@ ul.course-content_list li a{
     color: var(--color-dark);
 }
 .desription{
-    padding: 70px 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -668,7 +695,7 @@ ul.course-content_list li a{
 .overview-list li{
     display: flex;
     margin-bottom: 17px;
-    align-items: center;
+    align-items: flex-start;
 }
 .overview-list li h6{
     font-size: 18px;
@@ -729,13 +756,682 @@ a.obj-btn {
 }
 
 /* steps */
+.step-sec{
+    padding: 70px 0;
+}
+.steps-row{
+    position: relative;
+    padding: 47px 0 1px;
+}
+.steps-row::after{
+    background-color: #E0E0E0;
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
 .steps-col{
     display: flex;
+    margin-left: auto;
+    margin-bottom: 52px;
+    justify-content: flex-end;
+    gap: 140px;
+}
+.steps-col_img_inner {
+    width: 100%;
+}
+.steps-col_img_inner::after{
+    content: "30.000+";
+    position: absolute;
+    color: var(--color-yellow);
+    font-size: 40px;
+    font-weight: 600;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    transform: translateX(-106px);
+    top: -13px;
+    width: fit-content;
+}
+.steps-col:nth-child(2) .steps-col_img .steps-col_img_inner.steps-col_img_inner2::after{
+    content: "43.000€";
+    transform: translateX(131px);
+    width: fit-content;
+}
+.steps-col:nth-child(3) .steps-col_img .steps-col_img_inner.steps-col_img_inner3::after{
+    content: "10+";
+    transform: translateX(-71px);
+}
+.steps-col:nth-child(4) .steps-col_img .steps-col_img_inner.steps-col_img_inner4::after{
+    content: "20+";
+    transform: translateX(90px);
 }
 .steps-col_img{
     display: flex;
+    justify-content: center;
     position: absolute;
+    left: 0;
+    right: 0;
+}
+.steps-col_img img{
+    width: 32px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.steps-col_img h4{
+    color: var(--color-yellow);
+    font-weight: 700;
+    font-size: 40px;
 }
 .steps-col:nth-child(even){
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    margin: unset;
+    margin-bottom: 52px;
+}
+.step-col_text{
+    width: 45%;
+}
+.step-col_text h6{
+    font-size: 20px;
+    color: var(--color-dark);
+    font-weight: 600;
+    padding-bottom: 14px;
+}
+.step-col_text p{
+    color: var(--color-dark);
+    font-weight: 300;
+    text-align: justify;
+}
+.overview-btns{
+    display: flex;flex-wrap: wrap;
+}
+.overview-btns a{
+    background-color: #fff;
+    color: var(--color-yellow);
+    font-size: 12px;
+    margin: 0;
+    border-radius: 28px;
+    padding: 6px 13px;
+    margin-right: 4px;
+}
+
+
+@media screen and (max-width:1250px){
+    .offer-col h6{
+        font-size: 18px;
+    }
+    .custom-container {
+        max-width: 1210px;
+    }
+    .text-col h1 {
+        font-size: 61px;
+    }
+    .offer-col {
+        padding: 24px 15px 36px;
+    }
+    .offer-row{
+        gap: 20px;
+    }
+    .we-offer_col {
+        width: 32%;
+        padding: 19px 19px;
+    }
+    .we-offer_row {
+        gap: 20px 6px;
+        justify-content: space-between;
+    }
+    .smart-outer_row h2 {
+        font-size: 34px;
+    }
+    .smart-outer_row {
+        padding: 50px 40px 50px;
+    }
+    .blogs .item .item_inner h6 {
+        width: 88%;
+        padding: 18px 20px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:1164px){
+    .offer-col h6 {
+        height: 83px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width:949px){
+    .nav-list a{
+        font-size: 13px;
+    }
+    .inquery-btn {
+        padding: 13px 8px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:800px){
+    .offer-col h6{
+        height: unset;
+    }
+    .text-col h1 {
+        font-size: 44px;
+        padding-bottom: 0px;
+    }
+    .text-col a {
+        padding: 14px 38px;
+    }
+    .banner{
+        height: 100vh;
+    }
+    .banner_row {
+        height: 52%;
+    }
+    .nav-navBar {
+        padding-top: 16px;
+        padding-bottom: 28px;
+    }
+    .offer-sec {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+    .offer-row  {
+        grid-template-columns: auto auto;
+    }
+    .course-offer_sec {
+        padding: 85px 0 85px;
+    }
+    .we-offer_col {
+        width: 49%;
+    }
+    .we-offer_col div h6 {
+        font-size: 22px;
+    }
+    .need-bring_Sec{
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+    .bring_col ul li {
+        margin-top: 11px;
+    }
+    .bring_col {
+        padding: 37px 25px 60px;
+    }
+    .smart-outer_row h2 {
+        font-size: 28px;
+    }
+    .smart-outer_row {
+        padding: 50px 23px 50px;
+    }
+    .smart-col {
+        width: 32%;
+    }
+    .smart-inner_row {
+        gap: 3px;
+        justify-content: space-between;
+    }
+    .smart-outer_row p {
+        font-size: 16px;
+    }
+    .technology-sec {
+        padding: 85px 0 85px;
+    }
+    .sales-akadmie a {
+        padding: 12px 21px;
+    }
+    .contact-sec {
+        padding: 10px 0 80px;
+    }
+    .overview-col h2 {
+        font-size: 28px;
+    }
+    .overview-list li h6 {
+        font-size: 16px;
+    }
+    .overview-list li h6 {
+        width: 55%;
+    }
+    .overview-col {
+        width: 52%;
+    }
+    .question-col h2{
+        font-size: 25px;
+    }
+    .contact_text h5 {
+        font-size: 24px;
+    }
+    .contact_text a {
+        font-size: 16px;
+    }
+    .technology-sec h2 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .bring_row{
+        grid-template-columns: auto;
+    }
+    .inquery-btn{
+        display: none;
+    }
+    .text-col{
+        text-align: center;
+    }
+    .text-col h1 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .text-col h6 {
+        font-size: 12px;
+    }
+    .text-col p {
+        font-size: 16px;
+        padding: 31px 0 29px;
+    }
+    .text-col a {
+        padding: 12px 34px;
+    }
+    .text-col2 img {
+        margin-top: 58px;
+    }
+    .banner {
+        height: 150vh;
+    }
+    .banner_row {
+        height: 71%;
+    }
+    .offer-text h2 {
+        font-size: 24px;
+    }
+    .offer-text p {
+        font-size: 12px;
+    }
+   
+    .offer-row{
+        grid-template-columns: auto;
+        margin-top: 50px;
+    }
+    .offer-row::before{
+        display: none;
+    }
+    .custom-container {
+        padding: 50px 18px;
+    }
+    .offer-col h6 {
+        font-size: 18px;
+    }
+    .offer-col p {
+        font-size: 14px;
+    }
+    .offer-col {
+        padding: 24px 25px 36px;
+    }
+    .offer-col img {
+        max-width: 67px;
+    }
+    .course-offer_sec {
+        padding: 0px 0 0px;
+    }
+    .offer-text h6{
+        font-size: 14px;
+    }
+    .we-offer_col {
+        width: 100%;
+    }
+    .we-offer_col div h6 {
+        font-size: 20px;
+    }
+    .we-offer_col div p{
+        font-size: 12px;
+    }
+    .we-offer_col {
+        padding: 15px 15px;
+        border-radius: 8px;
+    }
+    .we-offer_col img {
+        max-width: 85%;
+    }
+    .we-offer_col_img {
+        margin-right: 8px;
+    }
+    .we-offer_row {
+        margin: 50px 0px;
+    }
+    .download {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    .bring_row {
+        padding: 50px 0px 0;
+    }
+    .bring_col h5 {
+        font-size: 20px;
+    }
+    .bring_col {
+        padding: 24px 25px 30px;
+        border-radius: 8px;
+    }
+    .bring_col ul li {
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .bring_col ul {
+        margin-top: 25px;
+    }
+    .success-bg h2 {
+        font-size: 24px;
+    }
+    .success_row{
+        flex-direction: column;
+    }
+    .success-col h6 {
+        font-size: 24px;
+    }
+    .success-col p {
+        font-size: 16px;
+    }
+    .success-col{
+        margin-bottom: 42px;
+    }
+    .success-col img {
+        width: 40px;
+    }
+    .success-bg{
+        background-position: center;
+    }
+    .offer-col{
+        border-radius: 8px;
+    }
+    .smart-outer_row{
+        border-radius: 8px;
+        text-align: center;
+    }
+    .smart-outer_row h2 {
+        font-size: 23px;
+    }
+    .smart-outer_row p {
+        font-size: 14px;
+    }
+    .smart-outer_row a {
+        padding: 12px 22px;
+    }
+    .smart-col {
+        width: 23%;
+    }
+    .smart-inner_row {
+        margin-top: 33px;
+    }
+    .technology-sec{
+        padding: 50px 0 50px;
+    }
+    .blogs {
+        padding: 50px 0 0;
+    }
+    .blogs .item .item_inner p {
+        font-size: 14px;
+    }
+    .inner-item__text {
+        padding: 0 19px 30px;
+    }
+    .sales-akadmie h2 {
+        font-size: 24px;
+    }
+    .sales-akadmie a {
+        margin: 20px auto 0;
+    }
+    .contact-sec{
+        position: relative;
+    }
+    .contact_text h6 {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .contact-row{
+        margin-top: 57px;
+    }
+    .contact-img{
+        width: 35%;
+    }
+    .contact_text a {
+        font-size: 14px;
+    }
+    .contact_text h5 {
+        font-size: 20px;
+    }
+    .contact-sec {
+        padding: 10px 0 50px;
+    }
+    .footer_row ul{
+        flex-direction: column;
+    }
+    .footer_social {
+        justify-content: flex-start;
+    }
+    .footer_row {
+        padding-top: 0px;
+        padding-bottom: 33px;
+    }
+    .footer_row ul li{
+        margin-bottom: 27px;
+    }
+    .footer_row ul li a{
+        font-size: 20px;
+    }
+    .footer_social a img {
+        margin-left: 0;
+        margin-right: 25px;
+    }
+    .footer-bg p{
+        font-size: 12px;
+    }
+    .footer-bg .custom-container{
+        padding: 50px 18px 10px;
+    }
+
+
+    .banner-course h1 {
+        font-size: 24px;
+    }
+    .banner-course h6{
+        font-size: 16px;
+    }
+    .banner-course{
+        height: 400px;
+    }
+    .course-banner {
+        height: 54%;
+    }
+    .course-heading h6 {
+        font-size: 12px;
+    }
+    .course-heading h2 {
+        font-size: 24px;
+    }
+    .course-content p{
+        font-size: 14px;
+    }
+    .course-content h5{
+        font-size: 20px;
+    }
+    ul.course-content_list li {
+        display: flex;
+    }
+    ul.course-content_list li a{
+        font-size: 12px;
+    }
+    .list-dots::before {
+        left: 12px;
+    }
+    .course-content ul {
+        padding: 15px 0 0 27px;
+    }
+    .contetnt-list_col {
+        gap: 6px;
+    }
+    ul.course-content_list li::after {
+        width: 13px;
+        height: 13px;
+    }
+    .faq-sec {
+        padding: 50px 0;
+    }
+    .faq-sec .accordion-button{
+        font-size: 14px;
+    }
+    .faq-sec .accordion-body{
+        font-size: 14px;
+        padding: 0 0 23px;
+    }
+    .question-col h6{
+        position: unset;
+    }
+    .nav-navBar {
+        padding-top: 11px !important;
+        padding-bottom: 28px !important;
+    }
+    .employe-bg .course-banner {
+        height: 21%;
+    } 
+    .overflow_row{
+        flex-direction: column;
+    }
+    .overview-col{
+        width: 100%;
+        padding: 32px 18px;
+    }
+    .question-col{
+        width: 100%;
+    }
+    .objective-sec {
+    
+        padding: 50px 0;
+    }
+    .coins img {
+        max-width: 27%;
+    }
+    .steps-col_img img{
+        right: unset;
+    }
+    .steps-row::after{
+        right: unset;
+        left: 16px;
+    }
+    .step-col_text {
+        width: 87%;
+        padding-top: 42px;
+    }
+    .steps-col_img_inner::after {
+        font-size: 24px;
+        transform: translateX(45px);
+        top: 0px;
+        margin: 0;
+    }
+    .step-col_text h6{
+        font-size: 16px;
+    }
+    .step-col_text p{
+        font-size: 14px;
+    }
+    .steps-col:nth-child(even){
+        flex-direction: unset;
+    }
+    .steps-col:nth-child(2) .steps-col_img .steps-col_img_inner.steps-col_img_inner2::after {
+        width: fit-content;
+        margin: unset;
+        transform: translateX(45px);
+    }
+    .steps-col:nth-child(4) .steps-col_img .steps-col_img_inner.steps-col_img_inner4::after {
+        width: fit-content;
+        margin: unset;
+        transform: translateX(45px);
+    }
+    .steps-col:nth-child(3) .steps-col_img .steps-col_img_inner.steps-col_img_inner3::after {
+        content: "10+";
+        transform: translateX(45px);
+        margin: 0;
+    }
+    .step-sec {
+        padding: 50px 0;
+    }
+    .steps-row {
+        padding: 0px 0 1px;
+    }
+    .steps-col {
+        margin-bottom: 33px;
+    }
+    .overview-col h2 {
+        font-size: 24px;
+        padding-bottom: 24px !important;
+    }
+    .overview-sec {
+        padding: 50px 0;
+    }
+    .overview-btns a{
+        font-size: 3vw;
+        margin-bottom: 9px;
+        width: 34%;
+        text-align: center;
+        padding: 1.5vw 2vw;
+    }
+    .overview-list li p {
+        font-size: 14px;
+    }
+    .overview-btns {
+
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .objective-desc p {
+
+        font-size: 14px;
+    }
+    .terms-banner .course-banner {
+        height: 0%;
+    }
+    .desription__inner h6 {
+        font-size: 18px;
+    }
+    .desription__inner p{
+        font-size: 14px;
+       
+    }
+    .home-logo{
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 34%;
+        top: 7px;
+    }
+    .nav-navBar .navbar-toggler{
+        border: none;
+        margin-top: 16px;
+    }
+    .header .custom-container {
+        padding: 50px 0px;
+    }
+    .header .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .header .container-fluid{
+        padding: 0 0;
+    }
+    .nav-list{
+        background: linear-gradient(45deg, #fffbf4, #fff3dd);
+        padding: 10px 15px;
+    }
+    
 }
